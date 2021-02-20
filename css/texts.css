@@ -1,0 +1,59 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+.logo{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+.logoInner{
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logoInner a{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logoInner a img{
+  width: 80%;
+  height: auto;
+  border: none;
+}
+
+.main{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 70px;
+}
+.mainInner{
+  width: 350px;
+  color: grey;
+}
+.homeIcon{
+  position: fixed;
+  bottom: 0;
+  right: 50%;
+  width: 50px;
+  height: 50px;
+  background: #557a95;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homeIcon a{
+  color: white;
+}
+.homeIcon a:hover{
+  color: black;
+}

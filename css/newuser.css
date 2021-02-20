@@ -1,0 +1,165 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Work Sans', sans-serif;
+}
+div{
+  box-sizing: border-box;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
+}
+/* input */
+input{
+  border: none;
+  box-shadow:none;
+  background: #ffffff;
+  outline: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  transition: background-color 5000s ease-in-out 0s;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance:textfield;
+}
+
+.nu_mainContainer{
+  width: 100%;
+  height: 100vh;
+}
+.nu_mainContainer_inner{
+  width: 100%;
+  height: 100%;
+}
+/* .nu_header{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nu_header img{
+  height: 50px;
+  width: auto;
+} */
+.nu_content{
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nu_contentInner{
+  width: 350px;
+}
+.nu_contentLogo{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.nu_contentLogo img{
+  height: 120px;
+  width: auto;
+}
+.nu_contentHeading{
+  font-size: 24px;
+  color: #666666;
+  width: 100%;
+  text-align: center;
+}
+.nu_content input[type="email"], .nu_content input[type="password"]{
+  width: 100%;
+  margin-top: 10px;
+  height: 40px;
+  box-sizing: border-box;
+  padding: 5px;
+  font-size: 20px;
+  color: #666666;
+  border-bottom: #666666 solid 1px;
+}
+.nu_content input[type="submit"]{
+  margin-top: 20px;
+  color: green;
+  font-size: 20px;
+  cursor: pointer;
+}
+.nu_contentFormSubmit{
+  width: 100%;
+  text-align: right;
+}
+.nu_contentExtra{
+  font-size: 12px;
+  color: #666666;
+  margin-top: 20px;
+}
+.nu_contentExtra a{
+  text-decoration: none;
+  color: blue;
+}
+.nu_contentExtra a:hover{
+  text-decoration: underline;
+}
+.nu_contentExtra2{
+  text-align: center;
+  margin-top: 10px;
+}
+.nu_errorDisplay{
+  margin-top: 10px;
+  font-size: 12px;
+  color: red;
+}
+.nu_contentFormKeepLogged{
+  font-size: 12px;
+  color: grey;
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.legalTexts{
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  margin-top: 15px;
+}
+.legalTexts span{
+  padding: 0 5px;
+  color: grey;
+  cursor: pointer;
+}
+.legalTexts span:hover{
+  color: black;
+}
+.aLegalText{
+  font-size: 12px;
+  display: none;
+  margin-top: 20px;
+}
+.aLegalTextClose{
+  color: blue;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.aLegalTextClose:hover{
+  text-decoration: underline;
+}

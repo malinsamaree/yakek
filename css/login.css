@@ -1,0 +1,165 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Work Sans', sans-serif;
+}
+div{
+  box-sizing: border-box;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
+}
+/* input */
+input{
+  border: none;
+  box-shadow:none;
+  background: #ffffff;
+  outline: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance:textfield;
+}
+
+.mainContainer{
+  width: 100%;
+  height: 100vh;
+}
+.mainContainerInner{
+  width: 100%;
+  height: 100%;
+}
+/* .header{
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header img{
+  height: 50px;
+  width: auto;
+} */
+.content{
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loginDiv{
+  width: 350px;
+  color: #666666;
+}
+.loginDivLogo{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.loginDivLogo img{
+  height: 120px;
+  width: auto;
+}
+.loginDivHeading{
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.loginDivContent{
+  font-size: 12px;
+}
+.loginDiv input[type='email'], .loginDiv input[type='password']{
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+  box-sizing: border-box;
+  padding: 5px;
+  color: #666666;
+  border-bottom: #666666 solid 1px;
+}
+.loginCkeckBox{
+  margin: 20px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.loginSubmitBtn{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.loginDiv input[type='submit']{
+  font-size: 20px;
+  color: green;
+  cursor: pointer;
+}
+.loginErr{
+  font-size: 12px;
+  width: 100%;
+  color: red;
+  margin: 5px 0;
+}
+.registerPageLink{
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  margin-top: 20px;
+}
+.registerPageLink a{
+  text-decoration: none;
+  color: blue;
+}
+.registerPageLink a:hover{
+  text-decoration: underline;
+}
+.legalTexts{
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  margin-top: 15px;
+}
+.legalTexts span{
+  padding: 0 5px;
+  color: grey;
+  cursor: pointer;
+}
+.legalTexts span:hover{
+  color: black;
+}
+.aLegalText{
+  font-size: 12px;
+  display: none;
+  margin-top: 20px;
+}
+.aLegalTextClose{
+  color: blue;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.aLegalTextClose:hover{
+  text-decoration: underline;
+}

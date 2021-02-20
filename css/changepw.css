@@ -1,0 +1,210 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Work Sans', sans-serif;
+}
+div{
+  box-sizing: border-box;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
+}
+/* input */
+input{
+  border: none;
+  box-shadow:none;
+  background: #ffffff;
+  outline: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance:textfield;
+}
+
+.mainContainer{
+  width: 100%;
+  height: 100vh;
+}
+.mainContainerInner{
+  width: 100%;
+  height: 100%;
+}
+/* .header{
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header img{
+  height: 50px;
+  width: auto;
+} */
+.content{
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loginDiv{
+  width: 350px;
+  color: #666666;
+}
+.loginDivLogo{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.loginDivLogo img{
+  height: 120px;
+  width: auto;
+}
+.loginDivHeading{
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.loginDivContent{
+  font-size: 12px;
+}
+.loginDiv input[type='email'], .loginDiv input[type='password']{
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+  box-sizing: border-box;
+  padding: 5px;
+  color: #666666;
+  border-bottom: #666666 solid 1px;
+}
+.loginCkeckBox{
+  margin: 20px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.loginSubmitBtn{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 30px 0;
+}
+.loginDiv input[type='submit']{
+  font-size: 20px;
+  color: green;
+  cursor: pointer;
+}
+.cancel a{
+  font-size: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #999999;
+}
+.cancel a:hover{
+  color: #333333;
+}
+.pwErr{
+  font-size: 12px;
+  width: 100%;
+  color: red;
+  margin: 5px 0;
+}
+.registerPageLink{
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  margin-top: 20px;
+}
+.registerPageLink a{
+  text-decoration: none;
+  color: blue;
+}
+.registerPageLink a:hover{
+  text-decoration: underline;
+}
+.passChangeSuccess{
+  width: 100%;
+}
+.passChangeSuccessMsg{
+  font-size: 20px;
+  color: green;
+  width: 100%;
+  text-align: center;
+  margin: 30px 0;
+}
+.passChangeSuccessHome{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.passChangeSuccessHome a{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  text-decoration: none;
+  color: grey;
+  text-align: center;
+}
+.passChangeSuccessHome a:hover{
+  color: black;
+}
+/* legal texts============================================================= */
+.legalTexts{
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+/* background: red; */
+margin-top: 3%;
+margin-bottom: 3%;
+}
+.legalTextsInner{
+  width: 350px;
+  font-size: 12px;
+  color: grey;
+}
+.legalTextsLinks{
+  text-align: center;
+}
+.legalTextsLinks a{
+  padding: 0 5px;
+  text-decoration: none;
+  color: grey;
+}
+.legalTextsLinks a:hover{
+  text-decoration: underline;
+  color: #333333;
+}
+/* legal texts end========================================================== */
