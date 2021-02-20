@@ -1,0 +1,169 @@
+[14-Mar-2020 21:15:43 America/New_York] PHP Notice:  Undefined index: userId in /home/yakemtfj/public_html/app/support/showMonthlySummary.php on line 6
+[14-Mar-2020 21:15:43 America/New_York] PHP Notice:  Undefined index: month in /home/yakemtfj/public_html/app/support/showMonthlySummary.php on line 7
+[14-Mar-2020 21:15:43 America/New_York] PHP Notice:  Undefined index: userId in /home/yakemtfj/public_html/app/support/showCategoryList.php on line 6
+[14-Mar-2020 21:15:43 America/New_York] PHP Notice:  Undefined index: userId in /home/yakemtfj/public_html/app/support/showSummary.php on line 6
+[14-Mar-2020 21:15:43 America/New_York] PHP Notice:  Undefined index: month in /home/yakemtfj/public_html/app/support/showSummary.php on line 7
+[14-Mar-2020 21:15:43 America/New_York] PHP Fatal error:  Uncaught Exception: DateTime::__construct(): Failed to parse time string (NaN--01) at position 0 (N): The timezone could not be found in the database in /home/yakemtfj/public_html/app/models/ShowSummary.php:7
+Stack trace:
+#0 /home/yakemtfj/public_html/app/models/ShowSummary.php(7): DateTime->__construct('NaN--01')
+#1 /home/yakemtfj/public_html/app/controllers/mir.php(77): ShowSummary->showTheSummary(NULL, NULL, 'NaN')
+#2 /home/yakemtfj/public_html/app/support/showSummary.php(11): Mir->showSummary(NULL, NULL, 'NaN')
+#3 {main}
+  thrown in /home/yakemtfj/public_html/app/models/ShowSummary.php on line 7
+[14-Mar-2020 21:15:43 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/yakemtfj/public_html/app/core/DatabaseHF.php:10
+Stack trace:
+#0 /home/yakemtfj/public_html/app/core/DatabaseHF.php(10): PDO->__construct('mysql:host=127....', 'root', '')
+#1 /home/yakemtfj/public_html/app/core/DatabaseHF.php(17): DatabaseHF::connect()
+#2 /home/yakemtfj/public_html/app/models/ShowCatList.php(14): DatabaseHF::selectQuery('SELECT * FROM c...', Array)
+#3 /home/yakemtfj/public_html/app/controllers/mir.php(83): ShowCatList->showCategoryList(NULL, 'true')
+#4 /home/yakemtfj/public_html/app/support/showCategoryList.php(10): Mir->showCatList(NULL, 'true')
+#5 {main}
+  thrown in /home/yakemtfj/public_html/app/core/DatabaseHF.php on line 10
+[14-Mar-2020 21:15:43 America/New_York] PHP Notice:  Undefined index: userId in /home/yakemtfj/public_html/app/support/viewTransactions.php on line 6
+[14-Mar-2020 21:15:43 America/New_York] PHP Notice:  Undefined index: month in /home/yakemtfj/public_html/app/support/viewTransactions.php on line 7
+[14-Mar-2020 21:15:43 America/New_York] PHP Fatal error:  Uncaught Exception: DateTime::__construct(): Failed to parse time string (NaN--01) at position 0 (N): The timezone could not be found in the database in /home/yakemtfj/public_html/app/models/ViewTransactions.php:8
+Stack trace:
+#0 /home/yakemtfj/public_html/app/models/ViewTransactions.php(8): DateTime->__construct('NaN--01')
+#1 /home/yakemtfj/public_html/app/controllers/mir.php(65): viewTransactions->viewEachTransaction(NULL, NULL, 'NaN')
+#2 /home/yakemtfj/public_html/app/support/viewTransactions.php(11): Mir->viewTransactions(NULL, NULL, 'NaN')
+#3 {main}
+  thrown in /home/yakemtfj/public_html/app/models/ViewTransactions.php on line 8
+[14-Mar-2020 21:15:43 America/New_York] PHP Notice:  Undefined index: userId in /home/yakemtfj/public_html/app/support/viewBudget.php on line 6
+[14-Mar-2020 21:15:43 America/New_York] PHP Notice:  Undefined index: catId in /home/yakemtfj/public_html/app/support/viewBudget.php on line 7
+[14-Mar-2020 21:15:43 America/New_York] PHP Notice:  Undefined index: month in /home/yakemtfj/public_html/app/support/viewBudget.php on line 8
+[14-Mar-2020 21:15:43 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/yakemtfj/public_html/app/core/DatabaseHF.php:10
+Stack trace:
+#0 /home/yakemtfj/public_html/app/core/DatabaseHF.php(10): PDO->__construct('mysql:host=127....', 'root', '')
+#1 /home/yakemtfj/public_html/app/core/DatabaseHF.php(17): DatabaseHF::connect()
+#2 /home/yakemtfj/public_html/app/models/ShowMonthlySummary.php(12): DatabaseHF::selectQuery('SELECT id FROM ...', Array)
+#3 /home/yakemtfj/public_html/app/controllers/mir.php(101): ShowMonthlySummary->showThisMonthSummary(NULL, NULL, 'NaN')
+#4 /home/yakemtfj/public_html/app/support/showMonthlySummary.php(11): Mir->showMonthlySummary(NULL, NULL, 'NaN')
+#5 {main}
+  thrown in /home/yakemtfj/public_html/app/core/DatabaseHF.php on line 10
+[14-Mar-2020 21:15:43 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/yakemtfj/public_html/app/core/DatabaseHF.php:10
+Stack trace:
+#0 /home/yakemtfj/public_html/app/core/DatabaseHF.php(10): PDO->__construct('mysql:host=127....', 'root', '')
+#1 /home/yakemtfj/public_html/app/core/DatabaseHF.php(17): DatabaseHF::connect()
+#2 /home/yakemtfj/public_html/app/models/ViewBudget.php(10): DatabaseHF::selectQuery('SELECT budget F...', Array)
+#3 /home/yakemtfj/public_html/app/controllers/mir.php(25): ViewBudget->checkBudget(NULL, NULL, NULL, 'NaN')
+#4 /home/yakemtfj/public_html/app/support/viewBudget.php(12): Mir->viewBudget(NULL, NULL, NULL, 'NaN')
+#5 {main}
+  thrown in /home/yakemtfj/public_html/app/core/DatabaseHF.php on line 10
+[14-Mar-2020 21:18:48 America/New_York] PHP Notice:  Undefined index: userId in /home/yakemtfj/public_html/app/support/viewBudget.php on line 6
+[14-Mar-2020 21:18:48 America/New_York] PHP Notice:  Undefined index: catId in /home/yakemtfj/public_html/app/support/viewBudget.php on line 7
+[14-Mar-2020 21:18:48 America/New_York] PHP Notice:  Undefined index: month in /home/yakemtfj/public_html/app/support/viewBudget.php on line 8
+[14-Mar-2020 21:18:48 America/New_York] PHP Notice:  Undefined index: userId in /home/yakemtfj/public_html/app/support/viewTransactions.php on line 6
+[14-Mar-2020 21:18:48 America/New_York] PHP Notice:  Undefined index: month in /home/yakemtfj/public_html/app/support/viewTransactions.php on line 7
+[14-Mar-2020 21:18:48 America/New_York] PHP Fatal error:  Uncaught Exception: DateTime::__construct(): Failed to parse time string (NaN--01) at position 0 (N): The timezone could not be found in the database in /home/yakemtfj/public_html/app/models/ViewTransactions.php:8
+Stack trace:
+#0 /home/yakemtfj/public_html/app/models/ViewTransactions.php(8): DateTime->__construct('NaN--01')
+#1 /home/yakemtfj/public_html/app/controllers/mir.php(65): viewTransactions->viewEachTransaction(NULL, NULL, 'NaN')
+#2 /home/yakemtfj/public_html/app/support/viewTransactions.php(11): Mir->viewTransactions(NULL, NULL, 'NaN')
+#3 {main}
+  thrown in /home/yakemtfj/public_html/app/models/ViewTransactions.php on line 8
+[14-Mar-2020 21:18:48 America/New_York] PHP Notice:  Undefined index: userId in /home/yakemtfj/public_html/app/support/showSummary.php on line 6
+[14-Mar-2020 21:18:48 America/New_York] PHP Notice:  Undefined index: month in /home/yakemtfj/public_html/app/support/showSummary.php on line 7
+[14-Mar-2020 21:18:48 America/New_York] PHP Fatal error:  Uncaught Exception: DateTime::__construct(): Failed to parse time string (NaN--01) at position 0 (N): The timezone could not be found in the database in /home/yakemtfj/public_html/app/models/ShowSummary.php:7
+Stack trace:
+#0 /home/yakemtfj/public_html/app/models/ShowSummary.php(7): DateTime->__construct('NaN--01')
+#1 /home/yakemtfj/public_html/app/controllers/mir.php(77): ShowSummary->showTheSummary(NULL, NULL, 'NaN')
+#2 /home/yakemtfj/public_html/app/support/showSummary.php(11): Mir->showSummary(NULL, NULL, 'NaN')
+#3 {main}
+  thrown in /home/yakemtfj/public_html/app/models/ShowSummary.php on line 7
+[14-Mar-2020 21:18:48 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[28000] [1045] Access denied for user 'yakemtfj_malin'@'localhost' (using password: YES) in /home/yakemtfj/public_html/app/core/DatabaseHF.php:10
+Stack trace:
+#0 /home/yakemtfj/public_html/app/core/DatabaseHF.php(10): PDO->__construct('mysql:host=loca...', 'yakemtfj_malin', 'knuffmunich2018')
+#1 /home/yakemtfj/public_html/app/core/DatabaseHF.php(17): DatabaseHF::connect()
+#2 /home/yakemtfj/public_html/app/models/ViewBudget.php(10): DatabaseHF::selectQuery('SELECT budget F...', Array)
+#3 /home/yakemtfj/public_html/app/controllers/mir.php(25): ViewBudget->checkBudget(NULL, NULL, NULL, 'NaN')
+#4 /home/yakemtfj/public_html/app/support/viewBudget.php(12): Mir->viewBudget(NULL, NULL, NULL, 'NaN')
+#5 {main}
+  thrown in /home/yakemtfj/public_html/app/core/DatabaseHF.php on line 10
+[14-Mar-2020 21:18:48 America/New_York] PHP Notice:  Undefined index: userId in /home/yakemtfj/public_html/app/support/showCategoryList.php on line 6
+[14-Mar-2020 21:18:48 America/New_York] PHP Notice:  Undefined index: userId in /home/yakemtfj/public_html/app/support/showMonthlySummary.php on line 6
+[14-Mar-2020 21:18:48 America/New_York] PHP Notice:  Undefined index: month in /home/yakemtfj/public_html/app/support/showMonthlySummary.php on line 7
+[14-Mar-2020 21:18:48 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[28000] [1045] Access denied for user 'yakemtfj_malin'@'localhost' (using password: YES) in /home/yakemtfj/public_html/app/core/DatabaseHF.php:10
+Stack trace:
+#0 /home/yakemtfj/public_html/app/core/DatabaseHF.php(10): PDO->__construct('mysql:host=loca...', 'yakemtfj_malin', 'knuffmunich2018')
+#1 /home/yakemtfj/public_html/app/core/DatabaseHF.php(17): DatabaseHF::connect()
+#2 /home/yakemtfj/public_html/app/models/ShowMonthlySummary.php(12): DatabaseHF::selectQuery('SELECT id FROM ...', Array)
+#3 /home/yakemtfj/public_html/app/controllers/mir.php(101): ShowMonthlySummary->showThisMonthSummary(NULL, NULL, 'NaN')
+#4 /home/yakemtfj/public_html/app/support/showMonthlySummary.php(11): Mir->showMonthlySummary(NULL, NULL, 'NaN')
+#5 {main}
+  thrown in /home/yakemtfj/public_html/app/core/DatabaseHF.php on line 10
+[14-Mar-2020 21:18:48 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[28000] [1045] Access denied for user 'yakemtfj_malin'@'localhost' (using password: YES) in /home/yakemtfj/public_html/app/core/DatabaseHF.php:10
+Stack trace:
+#0 /home/yakemtfj/public_html/app/core/DatabaseHF.php(10): PDO->__construct('mysql:host=loca...', 'yakemtfj_malin', 'knuffmunich2018')
+#1 /home/yakemtfj/public_html/app/core/DatabaseHF.php(17): DatabaseHF::connect()
+#2 /home/yakemtfj/public_html/app/models/ShowCatList.php(14): DatabaseHF::selectQuery('SELECT * FROM c...', Array)
+#3 /home/yakemtfj/public_html/app/controllers/mir.php(83): ShowCatList->showCategoryList(NULL, 'true')
+#4 /home/yakemtfj/public_html/app/support/showCategoryList.php(10): Mir->showCatList(NULL, 'true')
+#5 {main}
+  thrown in /home/yakemtfj/public_html/app/core/DatabaseHF.php on line 10
+[15-Mar-2020 13:28:07 America/New_York] PHP Warning:  Division by zero in /home/yakemtfj/public_html/app/controllers/mir.php on line 55
+[15-Mar-2020 13:28:29 America/New_York] PHP Warning:  Division by zero in /home/yakemtfj/public_html/app/controllers/mir.php on line 55
+[15-Mar-2020 13:28:58 America/New_York] PHP Warning:  Division by zero in /home/yakemtfj/public_html/app/controllers/mir.php on line 55
+[15-Mar-2020 13:29:14 America/New_York] PHP Warning:  Division by zero in /home/yakemtfj/public_html/app/controllers/mir.php on line 55
+[15-Mar-2020 13:54:28 America/New_York] PHP Warning:  Division by zero in /home/yakemtfj/public_html/app/controllers/mir.php on line 55
+[15-Mar-2020 13:54:57 America/New_York] PHP Warning:  Division by zero in /home/yakemtfj/public_html/app/controllers/mir.php on line 55
+[15-Mar-2020 14:19:17 America/New_York] PHP Warning:  Division by zero in /home/yakemtfj/public_html/app/controllers/mir.php on line 55
+[15-Mar-2020 17:45:21 America/New_York] PHP Warning:  Division by zero in /home/yakemtfj/public_html/app/controllers/mir.php on line 55
+[15-Mar-2020 17:45:32 America/New_York] PHP Warning:  Division by zero in /home/yakemtfj/public_html/app/controllers/mir.php on line 55
+[15-Mar-2020 17:45:37 America/New_York] PHP Warning:  Division by zero in /home/yakemtfj/public_html/app/controllers/mir.php on line 55
+[15-Mar-2020 17:45:39 America/New_York] PHP Warning:  Division by zero in /home/yakemtfj/public_html/app/controllers/mir.php on line 55
+[15-Mar-2020 17:45:51 America/New_York] PHP Warning:  Division by zero in /home/yakemtfj/public_html/app/controllers/mir.php on line 55
+[15-Mar-2020 17:46:11 America/New_York] PHP Warning:  Division by zero in /home/yakemtfj/public_html/app/controllers/mir.php on line 55
+[15-Mar-2020 17:46:25 America/New_York] PHP Warning:  Division by zero in /home/yakemtfj/public_html/app/controllers/mir.php on line 55
+[15-Mar-2020 17:46:25 America/New_York] PHP Warning:  Division by zero in /home/yakemtfj/public_html/app/controllers/mir.php on line 55
+[15-Mar-2020 17:46:54 America/New_York] PHP Warning:  Division by zero in /home/yakemtfj/public_html/app/controllers/mir.php on line 55
+[15-Mar-2020 17:47:14 America/New_York] PHP Warning:  Division by zero in /home/yakemtfj/public_html/app/controllers/mir.php on line 55
+[15-Mar-2020 17:47:27 America/New_York] PHP Warning:  Division by zero in /home/yakemtfj/public_html/app/controllers/mir.php on line 55
+[15-Mar-2020 17:47:56 America/New_York] PHP Warning:  Division by zero in /home/yakemtfj/public_html/app/controllers/mir.php on line 55
+[15-Mar-2020 17:48:00 America/New_York] PHP Warning:  Division by zero in /home/yakemtfj/public_html/app/controllers/mir.php on line 55
+[15-Mar-2020 17:51:16 America/New_York] PHP Warning:  Division by zero in /home/yakemtfj/public_html/app/controllers/mir.php on line 55
+[15-Mar-2020 17:55:00 America/New_York] PHP Warning:  Division by zero in /home/yakemtfj/public_html/app/controllers/mir.php on line 55
+[15-Mar-2020 17:55:44 America/New_York] PHP Warning:  Division by zero in /home/yakemtfj/public_html/app/controllers/mir.php on line 55
+[15-Mar-2020 17:56:44 America/New_York] PHP Warning:  Division by zero in /home/yakemtfj/public_html/app/controllers/mir.php on line 55
+[15-Mar-2020 17:56:56 America/New_York] PHP Warning:  Division by zero in /home/yakemtfj/public_html/app/controllers/mir.php on line 55
+[15-Mar-2020 17:57:23 America/New_York] PHP Warning:  Division by zero in /home/yakemtfj/public_html/app/controllers/mir.php on line 55
+[15-Mar-2020 17:58:18 America/New_York] PHP Warning:  Division by zero in /home/yakemtfj/public_html/app/controllers/mir.php on line 55
+[15-Mar-2020 17:59:22 America/New_York] PHP Warning:  Division by zero in /home/yakemtfj/public_html/app/controllers/mir.php on line 55
+[15-Mar-2020 18:00:33 America/New_York] PHP Warning:  Division by zero in /home/yakemtfj/public_html/app/controllers/mir.php on line 55
+[15-Mar-2020 18:00:48 America/New_York] PHP Warning:  Division by zero in /home/yakemtfj/public_html/app/controllers/mir.php on line 55
+[15-Mar-2020 18:01:13 America/New_York] PHP Warning:  Division by zero in /home/yakemtfj/public_html/app/controllers/mir.php on line 55
+[15-Mar-2020 18:01:14 America/New_York] PHP Warning:  Division by zero in /home/yakemtfj/public_html/app/controllers/mir.php on line 55
+[15-Mar-2020 18:02:22 America/New_York] PHP Warning:  Division by zero in /home/yakemtfj/public_html/app/controllers/mir.php on line 55
+[15-Mar-2020 18:03:10 America/New_York] PHP Warning:  Division by zero in /home/yakemtfj/public_html/app/controllers/mir.php on line 55
+[15-Mar-2020 18:03:37 America/New_York] PHP Warning:  Division by zero in /home/yakemtfj/public_html/app/controllers/mir.php on line 55
+[15-Mar-2020 18:03:54 America/New_York] PHP Warning:  Division by zero in /home/yakemtfj/public_html/app/controllers/mir.php on line 55
+[15-Mar-2020 18:03:59 America/New_York] PHP Warning:  Division by zero in /home/yakemtfj/public_html/app/controllers/mir.php on line 55
+[15-Mar-2020 18:04:01 America/New_York] PHP Warning:  Division by zero in /home/yakemtfj/public_html/app/controllers/mir.php on line 55
+[15-Mar-2020 18:04:07 America/New_York] PHP Warning:  Division by zero in /home/yakemtfj/public_html/app/controllers/mir.php on line 55
+[15-Mar-2020 18:04:08 America/New_York] PHP Warning:  Division by zero in /home/yakemtfj/public_html/app/controllers/mir.php on line 55
+[15-Mar-2020 18:04:11 America/New_York] PHP Warning:  Division by zero in /home/yakemtfj/public_html/app/controllers/mir.php on line 55
+[15-Mar-2020 18:04:11 America/New_York] PHP Warning:  Division by zero in /home/yakemtfj/public_html/app/controllers/mir.php on line 55
+[15-Mar-2020 18:04:45 America/New_York] PHP Warning:  Division by zero in /home/yakemtfj/public_html/app/controllers/mir.php on line 55
+[15-Mar-2020 18:04:47 America/New_York] PHP Warning:  Division by zero in /home/yakemtfj/public_html/app/controllers/mir.php on line 55
+[15-Mar-2020 18:04:48 America/New_York] PHP Warning:  Division by zero in /home/yakemtfj/public_html/app/controllers/mir.php on line 55
+[15-Mar-2020 18:05:01 America/New_York] PHP Warning:  Division by zero in /home/yakemtfj/public_html/app/controllers/mir.php on line 55
+[15-Mar-2020 18:07:24 America/New_York] PHP Warning:  Division by zero in /home/yakemtfj/public_html/app/controllers/mir.php on line 55
+[15-Mar-2020 18:07:41 America/New_York] PHP Warning:  Division by zero in /home/yakemtfj/public_html/app/controllers/mir.php on line 55
+[15-Mar-2020 18:08:55 America/New_York] PHP Warning:  Division by zero in /home/yakemtfj/public_html/app/controllers/mir.php on line 55
+[15-Mar-2020 18:09:21 America/New_York] PHP Warning:  Division by zero in /home/yakemtfj/public_html/app/controllers/mir.php on line 55
+[15-Mar-2020 18:09:43 America/New_York] PHP Warning:  Division by zero in /home/yakemtfj/public_html/app/controllers/mir.php on line 55
+[15-Mar-2020 18:10:04 America/New_York] PHP Warning:  Division by zero in /home/yakemtfj/public_html/app/controllers/mir.php on line 55
+[16-Mar-2020 02:33:30 America/New_York] PHP Warning:  Division by zero in /home/yakemtfj/public_html/app/controllers/mir.php on line 55
+[16-Mar-2020 03:55:37 America/New_York] PHP Warning:  Division by zero in /home/yakemtfj/public_html/app/controllers/mir.php on line 55
+[16-Mar-2020 04:00:15 America/New_York] PHP Warning:  Division by zero in /home/yakemtfj/public_html/app/controllers/mir.php on line 55
+[16-Mar-2020 05:18:38 America/New_York] PHP Warning:  Division by zero in /home/yakemtfj/public_html/app/controllers/mir.php on line 55
+[16-Mar-2020 05:50:52 America/New_York] PHP Warning:  Division by zero in /home/yakemtfj/public_html/app/controllers/mir.php on line 55
+[16-Mar-2020 05:51:20 America/New_York] PHP Warning:  Division by zero in /home/yakemtfj/public_html/app/controllers/mir.php on line 55
+[16-Mar-2020 15:25:13 America/New_York] PHP Warning:  Division by zero in /home/yakemtfj/public_html/app/controllers/mir.php on line 55
+[16-Mar-2020 15:27:30 America/New_York] PHP Warning:  Division by zero in /home/yakemtfj/public_html/app/controllers/mir.php on line 55
+[16-Mar-2020 15:28:49 America/New_York] PHP Warning:  Division by zero in /home/yakemtfj/public_html/app/controllers/mir.php on line 55
+[16-Mar-2020 15:28:50 America/New_York] PHP Warning:  Division by zero in /home/yakemtfj/public_html/app/controllers/mir.php on line 55
+[16-Mar-2020 15:29:02 America/New_York] PHP Warning:  Division by zero in /home/yakemtfj/public_html/app/controllers/mir.php on line 55
+[16-Mar-2020 15:29:39 America/New_York] PHP Warning:  Division by zero in /home/yakemtfj/public_html/app/controllers/mir.php on line 55
+[16-Mar-2020 15:29:42 America/New_York] PHP Warning:  Division by zero in /home/yakemtfj/public_html/app/controllers/mir.php on line 55
+[16-Mar-2020 15:30:05 America/New_York] PHP Warning:  Division by zero in /home/yakemtfj/public_html/app/controllers/mir.php on line 55
+[16-Mar-2020 15:35:09 America/New_York] PHP Warning:  Division by zero in /home/yakemtfj/public_html/app/controllers/mir.php on line 55
